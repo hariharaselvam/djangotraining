@@ -1,0 +1,18 @@
+<body>
+
+
+<h1>Twitter Timeline</h1>
+
+	{% if status_list %}
+	{% for i in status_list %}
+	<b>{{ i.user }}</b> says: 
+	<p>{{ i.text }}<p> at {{ i.created_At }}
+	
+	<hr>
+		
+	{% endfor %}
+	
+	{% else %}
+	No tweets!
+	{% endif %}
+</body>
