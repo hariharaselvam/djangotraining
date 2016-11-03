@@ -27,6 +27,25 @@ Sample django application
 5.  Run the web application:
 
       ``` $ python manage.py runserver ``` 
+      
+      
+6. Download and install redis server:
+
+      ``` $ curl -O http://download.redis.io/redis-stable.tar.gz ```
+      
+      ``` $ tar -xvzf redis-stable.tar.gz ```
+      
+      ``` $ cd redis-stable ```
+      
+      ``` $ make ```
+      
+      ``` $ sudo make install ```
+      
+      ``` $ redis-server ```
+
+7. Run celery:
+
+      ``` $ celery -A ecommerce worker -l info ```
 
      
 
