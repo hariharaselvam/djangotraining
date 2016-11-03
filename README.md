@@ -1,0 +1,2 @@
+# djangotraining
+Sample django application
